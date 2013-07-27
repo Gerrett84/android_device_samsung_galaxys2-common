@@ -70,6 +70,7 @@ TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := ./device/samsung/galaxys2-common/re
 # Graphics
 BOARD_EGL_CFG := device/samsung/galaxys2-common/configs/egl.cfg
 USE_OPENGL_RENDERER := true
+COMMON_GLOBAL_CFLAGS += -DGL_EXT_discard_framebuffer
 
 # Enable WEBGL in WebKit
 ENABLE_WEBGL := true
