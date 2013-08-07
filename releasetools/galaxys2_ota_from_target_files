@@ -87,8 +87,6 @@ def WriteFullOTAPackage(input_zip, output_zip):
   Item.GetMetadata(input_zip)
   Item.Get("system").SetPermissions(script)
 
-  script.RunInvokeAs()
-
   script.ShowProgress(0.2, 0)
 
   if OPTIONS.backuptool:
